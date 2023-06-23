@@ -28,3 +28,15 @@
     color: white;
     border: 20px;
 }
+.lowScore{
+    background-color: #8f8f8f;
+    color: white;
+}
+.midScore{
+    background-color: #1c1c1c ;
+    color: aqua;
+}
+.highScore{
+    background-color: #c29898;
+    color: #92c7c7;
+}
