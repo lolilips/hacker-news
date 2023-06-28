@@ -2,8 +2,8 @@ import {NewsItem} from "./components/NewsItem/NewsItem";
 import {useEffect, useState} from "react";
 import {get} from "./api/api";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {NewList} from "./pages/NewsList/NewList";
-import {Comments} from "./pages/comments/Comments";
+import {NewListPage} from "./pages/NewsListPage/NewListPage";
+import {CommentsPage} from "./pages/CommentsPages/CommentsPage";
 import {Layout} from "./components/Layout/Layout";
 
 
@@ -12,8 +12,8 @@ function App() {
       <Layout>
 <BrowserRouter>
 <Routes>
-  <Route path='/' element={<NewList/>}/>
-  <Route path='comments/:id' element={<Comments/>}/>
+  <Route path='/' element={<NewListPage/>}/>
+  <Route path='comments/:id' element={<CommentsPage/>}/>
 </Routes>
 </BrowserRouter>
       </Layout>
